@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 微軟正黑體;
+            color: #0e8e6f;
+            text-align: center;
+        }
+
+        form {
+            width: 50%;
+            margin: auto;
+        }
+
+        input {
+            padding: 2px 0;
+        }
+        table{
+        margin: 0 auto;
+    }
+
+        table,
+        td {
+            text-align: center;
+            border: 1px solid #0e8e6f;
+        }
+
+        input {
+            color: #0e8e6f;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>輸入所購買的等級及公斤數,並算出小計</h3>
+    <table>
+        <tr>
+            <td>等級</td>
+            <td>40公斤以內</td>
+            <td>超出40公斤</td>
+            <td>超出100公斤</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>30元/公斤</td>
+            <td>25元/公斤</td>
+            <td>20元/公斤</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>25元/公斤</td>
+            <td>20元/公斤</td>
+            <td>15元/公斤</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>20元/公斤</td>
+            <td>15元/公斤</td>
+            <td>10元/公斤</td>
+        </tr>
+    </table>
+    <hr>
+    <form method="post" action="03orangeSwitch.php">
+        <h3>價格估算</h3>
+        等級<input type="text" name="level" id=""><br>
+        公斤數<input type="text" name="kilo" id=""><br>
+        <input type="submit" value="新增">
+        <input type="reset" value="重新設定">
+    </form>
+</body>
+
+</html>

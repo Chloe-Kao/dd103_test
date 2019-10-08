@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: 微軟正黑體;
+        color: #0e8e6f;
+        text-align: center;
+    }
+    table{
+        margin: 0 auto;
+    }
+    table,
+        tr,
+        td {
+            border: 1px solid;
+            text-align: center;
+
+        }
+
+        td:nth-child(2) {
+            display: flex;
+            justify-content: flex-start;
+            text-align: center;
+        }
+    input{
+            color: #0e8e6f;
+        }
+</style>
+
+
+<body>
+    <form id="myForm" method="" action="02memberShow.php">
+         
+            <div class="wrapper">
+                    <h3>申請會員</h3>
+                    <table cellspacing="0">
+                        <tr>
+                            <td class="first"><p>姓名：</p></td>
+                            <td><input type="text" name="memName"></td>
+                        </tr>
+                        <tr>
+                            <td class="first"><p>帳號：</p></td>
+                            <td><input type="text" name="memId"> 最多8個文數字</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><p>密碼：</p></td>
+                            <td><input type="text" name="memPsw"> 最多8個文數字</td>
+                        </tr>
+                        <tr>
+                            <td class="first"><p>e-mail：</p></td>
+                            <td><input type="text" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td class="first"><p>性別：</p></td>
+                            <td>
+                                男 <input type="radio" name="sex" value="male">
+                                女 <input type="radio" name="sex" value="female">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="first"><p>生日：</p></td>
+                            <td><input type="text" name="birthday" placeholder="1992-12-30"></td>
+                        </tr>
+                        <tr>
+                            <td class="first"><p>聯絡電話：</p></td>
+                            <td><input type="text" name="tel"></td>
+                        </tr>
+                    </table>
+            
+                    <div class="btn">
+                        <input type="submit" value="新增" class="submit">
+                        <input type="reset" value="重新設定" class="submit">
+                    </div>
+                </div>
+
+</body>
+
+</html>
